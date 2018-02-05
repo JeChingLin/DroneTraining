@@ -5,11 +5,13 @@ workspace:
 pipeline:
   build:
     image: golang:alpine
-    pull : true
-    commands:
-      -pwd
-      -ls
-      -date
-      -go test ./go-example -coverprofile=coverage.out
-
-
+    pull: true
+    # environment:
+    #   - KEY=VALUE
+    commands: 
+    # - chmod +x /srv/drone-demo/example/command.sh
+    # - /srv/drone-demo/example/command.sh
+      - pwd
+      - ls
+      - date
+      - go test ./go-example -coverprofile=coverage.out
