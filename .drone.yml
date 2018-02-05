@@ -9,7 +9,7 @@ pipeline:
       commands:
         -pwd
         -ls
-	-date
-	-go test ./go-example -coverprofile=coverage.out
+	      -date
+	      -go test ./go-example -coverprofile=coverage.out
 
 
