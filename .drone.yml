@@ -1,15 +1,15 @@
 workspace:
-    base: /srv/drone-demo
-    path: ./example
+  base: /srv/drone-demo
+  path: ./example
 
 pipeline:
-    build:
-      image: golang:alpine
-      pull : true
-      commands:
-        -pwd
-        -ls
-	      -date
-	      -go test ./go-example -coverprofile=coverage.out
+  build:
+    image: golang:alpine
+    pull : true
+    commands:
+      -pwd
+      -ls
+      -date
+      -go test ./go-example -coverprofile=coverage.out
 
 
