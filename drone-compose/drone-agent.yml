@@ -1,0 +1,11 @@
+version: '3'
+services:
+    drone-agent:
+      image: drone/agent:latest
+      
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock:rw
+      restart: always
+      environment:
+        - DRONE_SECRET=drone
+        - DRONE_SERVER=13.229.211.36:9000

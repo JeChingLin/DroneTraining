@@ -1,0 +1,17 @@
+version : '3'
+services:
+    drone-server:
+      image: drone/drone:latest
+      port:
+        - 80:8000
+        - 9000:9000
+      volumes:
+        - ./drone-data:/var/lib/drone/:rw
+      restart: always
+      environment:
+        - DRONE_SECRET=drone
+        - DRONE_OPEN=ture
+        - DRONE_HOST=http://13.229.211.36
+        - DRONE_GITHUB=ture
+        - DRONE_GITHUB_CLIENT=2e6488884b170e98d181
+        - DRONE_GITHUB_SECRET=c418ec07cb585c5dbc302841f63bf3f85e404136
