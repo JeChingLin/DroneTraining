@@ -1,9 +1,8 @@
 package main
 
-import {
+import (
 	"log"
-}
-
+)
 func main() {
 	log.Println("main test")
 }
