@@ -10,8 +10,8 @@ services:
       restart: always
       environment:
         - DRONE_SECRET=drone
-        - DRONE_OPEN=ture
+        - DRONE_OPEN=true
         - DRONE_HOST=http://13.229.211.36
-        - DRONE_GITHUB=ture
+        - DRONE_GITHUB=true
         - DRONE_GITHUB_CLIENT=2e6488884b170e98d181
         - DRONE_GITHUB_SECRET=c418ec07cb585c5dbc302841f63bf3f85e404136
