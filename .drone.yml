@@ -15,3 +15,9 @@ pipeline:
       - ls
       - date
       - go test ./go-example -coverprofile=coverage.out
+  
+  codecov:
+    image: robertstettner/drone-codecov
+    token: 56c995db-702f-487c-8f88-e1d6373f3ad0
+    files:
+      - /srv/drone-demo/example/coverage.out
